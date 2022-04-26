@@ -18,15 +18,18 @@ downsp = 40; //down speed
 
 //double jump
 jumps = 0; //jumps available now
-jumpsmax = 2; //max total jumps
+jumpsmax = 1; //max total jumps
 
 //dash
 dashsp = 20; //dash speed
+jumpdashsp = 40 //jumping dash speed
 dashlength = 3; //dash duration
-dashmaxlength = dashlength //dash reset
+dashmaxlength = dashlength; //dash reset
+
+dashattack = true;	//attack in dash
 
 //grapple hook
-grapple = true //grapple enabled or no
+grapple = false //grapple enabled or no
 
 rope_start_multiplier = 0.5 //rope speed multiplier depending on starting movement speed
 rope_acc = -0.194 //rope acceleration
