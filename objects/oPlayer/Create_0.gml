@@ -27,6 +27,7 @@ dashlength = 3; //dash duration
 dashmaxlength = dashlength; //dash reset
 
 dashattack = true;	//attack in dash
+first_frame = true; //angle counter stuff
 
 //grapple hook
 grapple = false //grapple enabled or no

@@ -2,14 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function PlayerDashAngle(x1, y1, x2, y2){
 
-	hypothenuse = sqrt((x2-x1)^2+(y2-y1)^2)
+	var hypoX = sqr((x2-x1))
+	var hypoY = sqr((y2-y1))
+	hypothenuse = sqrt(hypoX + hypoY)
 	adjacent = x2-x1
 	
-	show_debug_message("hypothenuse:")
-	show_debug_message(hypothenuse)
-	show_debug_message("adjacent")
-	show_debug_message(adjacent)
+	var ArcCos = adjacent/hypothenuse
 	
-	//angle = arccos(adjacent/hypothenuse)
+	angle = darccos(ArcCos)
 
 }
