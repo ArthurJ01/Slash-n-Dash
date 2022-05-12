@@ -7,9 +7,6 @@ function PlayerStateDash(){
 	{
 		start_x = x
 		start_y = y
-		show_debug_message("startx/y")
-		show_debug_message(start_x)
-		show_debug_message(start_y)
 		first_frame = false
 	}
 	if(!oPlayer.key_up_held)

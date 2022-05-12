@@ -16,6 +16,7 @@ jumpsp = 20; //jump speed
 downsp = 40; //down speed
 
 
+
 //double jump
 jumps = 0; //jumps available now
 jumpsmax = 1; //max total jumps
