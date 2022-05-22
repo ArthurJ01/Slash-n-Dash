@@ -67,10 +67,22 @@ vsp = vsp + grv;
 #endregion Movement
 
 #region change state
-if (key_dash)
+
+if (dashCD = true)
+{
+	dashCDtimer -= 1	
+}
+
+if (dashCDtimer < 0)
+{
+	dashCD = false
+	dashCDtimer = dashCDtimerReset
+}
+if (key_dash and dashCD = false)
 
 	{
 		state = PlayerStateDash
+		dashCD = true
 	}
 	
 if(grapple)

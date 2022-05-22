@@ -13,11 +13,13 @@ function PlayerStateDash(){
 	{
 		if(playerDirection = 0)playerDirection = 1;
 		hsp = hsp + oPlayer.playerDirection * dashsp
+	
 	}
 	if(oPlayer.key_up_held)
 	{
 		hsp += oPlayer.playerDirection * dashsp
 		vsp = -jumpdashsp
+		dashUp = true
 		
 	}
 	

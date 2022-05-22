@@ -26,12 +26,15 @@ dashsp = 20; //dash speed
 jumpdashsp = 40 //jumping dash speed
 dashlength = 3; //dash duration
 dashmaxlength = dashlength; //dash reset
+dashCD = false //wether or not dash is on CD
+dashCDtimer = 2 * room_speed //dash Cd time
+dashCDtimerReset = dashCDtimer //resetter
 
 dashattack = true;	//attack in dash
 first_frame = true; //angle counter stuff
 
 //grapple hook
-grapple = false //grapple enabled or no
+grapple = true //grapple enabled or no
 
 rope_start_multiplier = 0.5 //rope speed multiplier depending on starting movement speed
 rope_acc = -0.194 //rope acceleration

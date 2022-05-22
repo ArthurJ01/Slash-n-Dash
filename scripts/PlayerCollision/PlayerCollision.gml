@@ -6,7 +6,9 @@ function PlayerCollision(){
 		while (!place_meeting(x+sign(hsp), y, oWall)){
 		   x+=sign(hsp);
 	    }
-		hsp=0;
+		
+			hsp=0;
+		
 	}
 		
 		x += hsp;
