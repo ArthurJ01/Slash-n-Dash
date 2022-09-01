@@ -70,14 +70,17 @@ vsp = vsp + grv;
 
 if (dashCD = true)
 {
-	dashCDtimer -= 1	
+	if(place_meeting(x,y+64,oWall))
+		{
+			dashCD = false	
+		}
 }
 
-if (dashCDtimer < 0)
-{
-	dashCD = false
-	dashCDtimer = dashCDtimerReset
-}
+//if (dashCDtimer < 0)
+//{
+//	dashCD = false
+//	dashCDtimer = dashCDtimerReset
+//}
 if (key_dash and dashCD = false)
 
 	{

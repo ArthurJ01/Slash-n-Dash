@@ -3,6 +3,7 @@
     {"id":{"name":"ninja_reg_idle","path":"sprites/ninja_reg_idle/ninja_reg_idle.yy",},"order":17,},
     {"id":{"name":"ninja_blue_run","path":"sprites/ninja_blue_run/ninja_blue_run.yy",},"order":5,},
     {"id":{"name":"ninja_blue_jump","path":"sprites/ninja_blue_jump/ninja_blue_jump.yy",},"order":4,},
+    {"id":{"name":"PlayerStateMouseDash","path":"scripts/PlayerStateMouseDash/PlayerStateMouseDash.yy",},"order":8,},
     {"id":{"name":"ninja_reg_duck","path":"sprites/ninja_reg_duck/ninja_reg_duck.yy",},"order":14,},
     {"id":{"name":"ninja_yellow_fall","path":"sprites/ninja_yellow_fall/ninja_yellow_fall.yy",},"order":29,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":41,},
@@ -34,6 +35,7 @@
     {"id":{"name":"oDashAttack","path":"objects/oDashAttack/oDashAttack.yy",},"order":3,},
     {"id":{"name":"ninja_red_fall","path":"sprites/ninja_red_fall/ninja_red_fall.yy",},"order":8,},
     {"id":{"name":"ninja_reg_slide","path":"sprites/ninja_reg_slide/ninja_reg_slide.yy",},"order":20,},
+    {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},"order":1,},
     {"id":{"name":"ninja_white_slide","path":"sprites/ninja_white_slide/ninja_white_slide.yy",},"order":27,},
     {"id":{"name":"ninja_yellow_hit","path":"sprites/ninja_yellow_hit/ninja_yellow_hit.yy",},"order":30,},
     {"id":{"name":"ninja_yellow_duck","path":"sprites/ninja_yellow_duck/ninja_yellow_duck.yy",},"order":28,},
@@ -72,6 +74,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [

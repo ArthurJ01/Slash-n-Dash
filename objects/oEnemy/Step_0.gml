@@ -1,1 +1,1 @@
-y += (target-y)*0.1
+//y += (target-y)*0.1
