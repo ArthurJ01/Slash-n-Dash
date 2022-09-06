@@ -3,20 +3,44 @@ function PlayerStateFree(){
 
 #region Movement
 #region Horizontal Movement
-if (key_left)
-	{
-		hsp -= acc;
-	}
+//if (key_left)
+//	{
+//		hsp -= acc;
+//	}
 
-if (key_right)
-	{
-		hsp += acc;
-	}
+//if (key_right)
+//	{
+//		hsp += acc;
+//}
 
-if (!key_left and !key_right)
+var dir = key_right - key_left;
+
+
+hsp += dir * acc;
+
+if key_right and key_left hsp = 0;
+
+if (!key_left and !key_right and place_meeting(x,y+sprite_height/2,oWall)) //decelerate when grounded
 	{
 		hsp -= sign(hsp)*dec;	
 	}
+	
+if (!key_left and !key_right and !place_meeting(x,y+sprite_height/2,oWall) and !post_dash) //decelerate when in air (not after dash)
+	{
+		hsp -= sign(hsp)*air_dec	
+	}
+	
+	if (!key_left and !key_right and !place_meeting(x,y+sprite_height/2,oWall) and !post_dash) //decelerate when in air (less since after dash)
+	{
+		hsp -= sign(hsp)*air_dec_dash	
+	}
+hsp += hsp_frac;
+vsp += vsp_frac;
+hsp_frac = frac(hsp);
+vsp_frac = frac(vsp);
+hsp -= hsp_frac;
+vsp -= vsp_frac;
+
 
 hsp = clamp(hsp, -walksp, walksp);
 
@@ -35,9 +59,10 @@ vsp = vsp + grv;
 	}
 	
 	
-	if (place_meeting(x,y+1,oWall)){
+	if (place_meeting(x,y+1,oWall))
+		{
 		
-		jumps = jumpsmax;
+			jumps = jumpsmax;
 		}
 		
 	if(key_up and jumps > 0){
@@ -61,7 +86,7 @@ vsp = vsp + grv;
 		
 	if(hsp != 0){image_xscale = sign(hsp)}
 
-
+	vsp = clamp(vsp, -jumpsp, jumpsp);
 
 #endregion Vertical Movement
 #endregion Movement
@@ -84,7 +109,9 @@ if (dashCD = true)
 if (key_dash and dashCD = false)
 
 	{
-		state = PlayerStateDash
+		//state = PlayerStateDash
+		vsp = 0;
+		state = PlayerStateMouseDash
 		dashCD = true
 	}
 	
@@ -107,13 +134,14 @@ if(grapple)
 					rope_length = point_distance(grapple_x, grapple_y,x,y); 
 						if(place_meeting(mouse_x,mouse_y,oWall) and distance_to_point(mouse_x, mouse_y) < max_hook_range)
 							{
-								if(!place_meeting(x,y+10, oWall))
+								if(!place_meeting(x,y+sprite_height/2, oWall))
 									{
 										state = PlayerStateSwing;
 										grapple_start = false;
 									}
 							}
 				}
+				
 		
 		}
 }

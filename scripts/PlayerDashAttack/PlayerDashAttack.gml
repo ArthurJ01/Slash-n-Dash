@@ -3,7 +3,11 @@
 function PlayerDashAttack(){
 	
 	
-	instance_create_layer(oPlayer.x, oPlayer.y, "Instances", oDashAttack)
+	with(instance_create_layer(oPlayer.x, oPlayer.y, "Instances", oDashAttack))
+		{
+			image_angle = point_direction(oPlayer.x,oPlayer.y,oPlayer.dash_x,oPlayer.dash_y)
+			
+		}
 	
 	
 	

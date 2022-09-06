@@ -29,6 +29,6 @@ function PlayerStateSwing(){
 					}
 					
 			
-					
-	PlayerCollision();
+		PlayerCollision();			
+	
 }	

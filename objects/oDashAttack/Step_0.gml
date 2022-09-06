@@ -1,19 +1,19 @@
 if(frame1)
 {
 	frame1 = false;
-	image_xscale = oPlayer.playerDirection
-	if(oPlayer.key_up_held)
-	{
-		if(image_xscale = 1)
-		{
-			image_angle = 40
-		}
-		if(image_xscale = -1)
-		{
-			image_angle = -40
-		}
+	//image_xscale = oPlayer.playerDirection
+	//if(oPlayer.key_up_held)
+	//{
+	//	if(image_xscale = 1)
+	//	{
+	//		image_angle = 40
+	//	}
+	//	if(image_xscale = -1)
+	//	{
+	//		image_angle = -40
+	//	}
 		
-	}
+	//}
 }
 
 buffer -= 1
