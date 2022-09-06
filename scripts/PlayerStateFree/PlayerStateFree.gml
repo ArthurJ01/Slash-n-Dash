@@ -95,7 +95,7 @@ vsp = vsp + grv;
 
 if (dashCD = true)
 {
-	if(place_meeting(x,y+64,oWall))
+	if(place_meeting(x,y+sprite_height/2,oWall))
 		{
 			dashCD = false	
 		}

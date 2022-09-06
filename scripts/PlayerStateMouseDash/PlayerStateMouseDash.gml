@@ -13,6 +13,7 @@ function PlayerStateMouseDash(){
 		dash_x = mouse_x;
 		dash_y = mouse_y;
 		first_frame = false;
+		if(oPlayer.dashattack)PlayerDashAttack()
 	}
 	
 	
@@ -32,7 +33,7 @@ function PlayerStateMouseDash(){
 		vsp = round(vsp*vsp_post_dash_dec)
 		state = PlayerStateFree
 		
-		if(oPlayer.dashattack)PlayerDashAttack()
+		
 	}
 	PlayerCollision();
 }
