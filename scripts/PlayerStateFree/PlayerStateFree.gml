@@ -118,21 +118,21 @@ if (key_dash and dashCD = false)
 if(grapple)
 {
 	if(vsp > -.5 ) grapple_start = true
-	if(place_meeting( x,y+1, oWall )) grapple_start = false
+	if(place_meeting( x,y+1, oGrappleWall )) grapple_start = false
 	if(grapple_start)
 		{
 			if(key_hook)
 				{
 				
 					//hook initialisation 
-					grapple_x = mouse_x;
-					grapple_y = mouse_y;
+					grapple_x = instance_nearest(mouse_x,mouse_y, oGrappleWall).x;
+					grapple_y = instance_nearest(mouse_x,mouse_y, oGrappleWall).y;
 					rope_x = x;
 					rope_y = y;
 					rope_angle_velocity = rope_start_multiplier*hsp;
 					rope_angle = point_direction(grapple_x, grapple_y, x, y);
 					rope_length = point_distance(grapple_x, grapple_y,x,y); 
-						if(place_meeting(mouse_x,mouse_y,oWall) and distance_to_point(mouse_x, mouse_y) < max_hook_range)
+						if(distance_to_point(instance_nearest(mouse_x,mouse_y, oGrappleWall).x, instance_nearest(mouse_x,mouse_y, oGrappleWall).y) < max_hook_range)
 							{
 								if(!place_meeting(x,y+sprite_height/2, oWall))
 									{

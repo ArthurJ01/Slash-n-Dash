@@ -17,7 +17,7 @@ grv = 1; //gravity
 
 //jump
 is_jumping = false //jump "state" check
-jumpsp = 20; //jump speed (20 default)
+jumpsp = 21; //jump speed (20 default)
 downsp = 40; //down speed
 
 
