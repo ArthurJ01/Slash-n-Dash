@@ -4,3 +4,4 @@ orbit_place = 0;
 
 counter = 1;
 
+stop = false;
