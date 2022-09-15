@@ -2,6 +2,7 @@ with(other)
 	{
 		instance_destroy();
 		instance_create_layer(x,y,"Instances", oDeathAnimation)
+		instance_create_layer(x,y,"Instances", oRespawner)
 		repeat(50)
 		{
 			with(instance_create_layer(x,y, "Instances",oBloodParticle))

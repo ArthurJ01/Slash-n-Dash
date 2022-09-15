@@ -8,3 +8,20 @@ with(instance_nearest(mouse_x,mouse_y,oGrappleWall))
 		image_index = 1;	
 	}
 }
+
+#region fullscreen
+
+if keyboard_check_pressed(vk_escape)
+{
+    if window_get_fullscreen()
+    {
+        window_set_fullscreen(false);
+    }
+    else
+    {
+        window_set_fullscreen(true);
+    }
+}
+
+#endregion fullscreen
+
