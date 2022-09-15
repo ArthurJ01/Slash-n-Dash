@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "player shit",
+    "path": "folders/Objects/player shit.yy",
   },
   "resourceVersion": "1.0",
   "name": "oCursor",

@@ -1,9 +1,9 @@
 with(other)
 	{
 		instance_destroy();
-		instance_create_layer(x,y,"Instances", oDeathAnimation)
+		//instance_create_layer(x,y,"Instances", oDeathAnimation)
 		instance_create_layer(x,y,"Instances", oRespawner)
-		repeat(50)
+		repeat(oDashAttack.ParticleAmount)
 		{
 			with(instance_create_layer(x,y, "Instances",oBloodParticle))
 			{
@@ -11,6 +11,14 @@ with(other)
 		
 			}
 		}
+		repeat(2)
+		{
+				with(instance_create_layer(x,y, "Instances",oEnemyDead))
+				{
+					direction = random_range(0,359)	
+				}
+		}
+		
 	}
 
 oPlayer.dashCD = false;

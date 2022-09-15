@@ -14,7 +14,7 @@ else
 
 if(timer)
 {
-	seconds += (delta_time*0.000001)*room_speed;
+	seconds += (delta_time/1000000);
 	
 	if seconds >= 60
 	{

@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "game obj",
+    "path": "folders/Objects/game obj.yy",
   },
   "resourceVersion": "1.0",
   "name": "oTimer",

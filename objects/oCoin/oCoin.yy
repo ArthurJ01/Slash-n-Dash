@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "interactable obj",
+    "path": "folders/Objects/interactable obj.yy",
   },
   "resourceVersion": "1.0",
   "name": "oCoin",
