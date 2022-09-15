@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sPoison.mp3",
-  "duration": 8.928,
+  "duration": 7.752,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
