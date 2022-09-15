@@ -136,10 +136,12 @@ if(grapple)
 							{
 								if(!place_meeting(x,y+sprite_height/2, oWall))
 									{
+										
 										state = PlayerStateSwing;
 										grapple_start = false;
 									}
 							}
+							
 				}
 				
 		

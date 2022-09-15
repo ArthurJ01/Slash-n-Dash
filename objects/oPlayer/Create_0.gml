@@ -1,5 +1,7 @@
 ///@desc Initialise Inputs/Variables/Mechanics
 
+audio_listener_orientation(0,1,0,0,0,1);
+
 hsp_frac = 0; //takes away fractions in hsp	
 vsp_frac = 0; //takes away fractions in vsp
 
@@ -49,6 +51,7 @@ rope_acc = -0.194 //rope acceleration
 rope_dec = .994 //rope deceleration
 max_hook_range = 300
 grapple_start = false
+can_hook = false //if player is in hookrange
 
 
 

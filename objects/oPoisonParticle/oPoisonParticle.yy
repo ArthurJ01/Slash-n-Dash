@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sObstacle",
-    "path": "sprites/sObstacle/sObstacle.yy",
+    "name": "sPoisonParticle",
+    "path": "sprites/sPoisonParticle/sPoisonParticle.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +31,7 @@
     "path": "folders/Objects/interactable obj.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oObstacle",
+  "name": "oPoisonParticle",
   "tags": [],
   "resourceType": "GMObject",
 }
